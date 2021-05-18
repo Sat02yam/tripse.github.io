@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traipse</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Trip<span>se</span></h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="/Assets/Background.mp4" class="video" autoplay loop muted></video>
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Dare to live</h2>
+            <h3>the life</h3>
+            <h2>You've always Wanted</h2>
+            <p>Once the Travel bug bites there is no known antidote, <br> and I know that I shall be happily infected until the end of my life.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="/Assets/fb.svg" alt="" srcset=""></a></li>
+            <li><a href="#"><img src="/Assets/ig.svg" alt="" srcset=""></a></li>
+            <li><a href="#"><img src="/Assets/twitter.svg" alt="" srcset=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Follow me!</a></li>
+        </ul>
+    </div>
+
+    <script>
+         const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+</body>
+</html>
